@@ -165,9 +165,9 @@ function generateKeypad() {
 
 //Function to analyse a letter pushed on keypad
 function pushLetterKey(i) {
-   let keyboardChar=String.fromCharCode(65+i);
+   let keyboardChar = String.fromCharCode(65 + i);
    document.getElementById(keyboardChar).disabled = true;
-   document.getElementById(keyboardChar).style.backgroundColor="gray";
+   document.getElementById(keyboardChar).style.backgroundColor = "gray";
    let leng = charGuessWord.length - 1;
    let gameWon = false;
     let findLetter = false;
@@ -224,7 +224,7 @@ function keypadDisable(disable,memKeyInit) {
       if (memKeyInit >= 0)
          document.getElementById(keyboardChar).style.backgroundColor="green";
       if (memKeyInit == 0)
-         memKeyPressed[i]=0;
+         memKeyPressed[i] = 0;
    }
 }
 

@@ -17,15 +17,15 @@ function printMsgTop(msg) {
 
 //Display try left
  function dsplyTryLeft(idTry) {
-   if (idTry>=0)
-      tryLeft=idTry;
+   if (idTry >= 0)
+      tryLeft = idTry;
    if (idTry == -1)
       if (tryLeft > 0)
          --tryLeft;        
    tryNb.innerHTML = tryLeft;
  }
 //Activate buttons
-function activateButtons(enWordInp,enEdit,enStop,enCont,enRst,enNew,enShow) {
+function activateButtons(enWordInp, enEdit, enStop, enCont, enRst, enNew, enShow) {
    document.getElementById("wordSecret").style.display = enWordInp; 
    document.getElementById("btnEdit").style.display = enEdit;
    document.getElementById("btnStop").style.display = enStop;
@@ -49,14 +49,14 @@ function evBtnSecretWord() {
    onlyLetters=true;
    lenWord=secretWord.length;
    //Check if all the characters of a string are letters 
-   for (let i = 0 ;i < lenWord; i++)
-      if (secretWord[i]<'A' || secretWord[i]> 'Z') {
+   for (let i = 0; i < lenWord; i++)
+      if (secretWord[i] < 'A' || secretWord[i] > 'Z') {
          onlyLetters=false;
          break;
       }
-   if (!onlyLetters && lenWord>0)
+   if (!onlyLetters && lenWord  >0)
       printMsgTop(  "Only letters are allowed!");
-   if (lenWord>=3 && lenWord<=20 && onlyLetters) { 
+   if (lenWord >= 3 && lenWord <= 20 && onlyLetters) { 
       activateButtons("none", "none", "inline", "none", "none", "none", "none");   
       printMsgTop(" Game in progress..");
       keypadDisable(false, 0);

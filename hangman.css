@@ -1,0 +1,146 @@
+
+ #title {
+     text-align: center;
+}
+ #btnEdit {
+    position: absolute;
+    left: 25%;
+     margin:0px 20px;	 
+}
+
+#btnStop {
+    position: absolute;
+      margin:0px 20px;  
+      left: 0%;
+	  display: none; 
+}
+#btnCont {
+    position: absolute;
+      margin:0px 20px;  
+      left: 0%;
+	  display: none; 
+}
+ #btnReset {
+    position: absolute;
+      margin:0px 20px;  
+      left: 15%;
+	  display: none; 
+}
+ #btnShow {
+    position: absolute;
+     margin:0px 20px;
+     left: 55%;
+	 display: none;
+	 
+}
+#btnNew {
+    position: absolute;
+    margin:0px 20px;
+    left: 36%;
+    display: none;
+    
+}
+ #wordInp {
+     font-size: 18px;
+     padding:5px 25px;
+     border-radius:5px;
+     box-shadow:0 0 15px 10px rgba(0,0,0,0.3);
+}
+ body {
+     background-color: #C0C0C0;
+}
+ .draw {
+     position: absolute;  
+     display: block;
+     height: 370px;
+     width:310px;
+     top: 45%;
+     right: 7%;
+     fill: transparent;
+     stroke: black;
+     stroke-width: 6px;
+     stroke-linecap: round;
+     
+}
+ .menParts {
+    display: none; 
+}
+ .btnStyle {
+     position: absolute;
+     background-color: #5ce3f06d;
+     color: black;
+     border: 1px ,blue ;
+     padding: 4px 6px;
+     text-align: center;
+     border-radius:5px; 
+     font-size: 19px;
+     cursor: pointer;
+}
+ .btnStyle:hover {
+     background-color: #87CEFA;
+     border: 1px solid #4CAF50;
+}
+#msgTop{
+    position: absolute;
+    left: 2%;
+}
+ .keyStyle {
+    display: inline-block;    
+     text-align: center;
+     font-size: 16px;
+     padding: 5px 13px;
+     margin: 8px 4px;
+     cursor: pointer;
+     background-color: #76c71f;
+     color: black;
+     border: 2px solid #008CBA;
+     border-radius:3px;
+}
+ .keyStyle:hover {
+     background-color: #008CBA;
+     color: white;
+}
+
+#tryNbLbl {  
+    font-size: 31px;
+}
+#tryNbDiv {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 300px;
+    font-size: 31px;
+}
+#tryNb {
+    font-size: 31px;
+     color: #FF4500;
+}
+#keypadDiv {
+    position: absolute;
+    background-color: #008CBA;
+    top : 300px;
+    width : 300px;
+    display: none;
+}#keypadBtn {
+    background-color: #0db2ea;
+   
+
+}
+ #wordGuessDiv {
+     position: absolute;
+     left: 1%;
+     top: 200px;
+     width : 350px;
+     font-size: 30px;
+     color: #183f32;
+}
+ 
+#msgFinDiv {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+#msgFin {
+    font-size: 31px;
+    /* color: #FF4500; */
+}

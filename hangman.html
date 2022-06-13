@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no">
+     <title>Hangman</title>
+      <h1 id="title">Game Hangman</h1>
+      <link rel="stylesheet" href="hangman.css">
+   </head>
+   <body onload="onloadFunc()">
+      <input type="password" id="wordSecret" > 
+      <button class="btnStyle" id = "btnEdit" type="button" onclick="evBtnSecretWord()">OK</button>
+		<br/>    <br/>  
+      <button class="btnStyle" id = "btnStop" type="button" onclick="evBtnStopGame()">Stop</button>  
+      <span>
+         <button class="btnStyle" id = "btnCont" type="button" onclick="evBtnContinueGame()">Continue</button>
+      </span>    
+      <span>
+         <button class="btnStyle" id = "btnNew" type="button" onclick="evBtnNewGame()">New game</button>
+      </span> 
+      <span>
+         <button class="btnStyle" id = "btnReset" type="button" onclick="evBtnRestartGame()">Restart game</button>
+      </span>
+      <span>
+         <button class="btnStyle" id = "btnShow" type="button" onclick="evBtnShowSecretWord()">Show word</button>
+      </span>
+      <br/> <br/>  
+      <p id="msgTop">Enter the secret word:</p>       
+      <br/>    <br/>
+      <div id="msgFinDiv">
+            <p id= "msgFin"></p>
+      </div>
+      <div id="tryNbDiv">
+         <p id= "tryNbLblDiv">Try left: <span id="tryNb"> </span> </p>
+      </div>
+      <div id="wordGuessDiv">
+         <p id = "wordGuess"> </p>
+      </div>
+       <div>
+         <svg class="draw">
+            <line x1="5%" y1="75%" x2="35%" y2="75%" />
+            <line x1="10%" y1="75%" x2="20%" y2="65%"/>
+            <line x1="30%" y1="75%" x2="20%" y2="65%"/>
+            <line x1="20%" y1="1%" x2="20%" y2="75%" />
+            <line x1="20%" y1="1%" x2="75%" y2="1%" />
+            <line x1="75%" y1="1%" x2="75%" y2="22%" />
+            <line x1="20%" y1="25%" x2="45%" y2="1%"/>
+            <circle r="7%" cx="75%" cy="30%" class="menParts" />
+            <line x1="75%" y1="37%" x2="75%" y2="60%" class="menParts" />
+            <line x1="60%" y1="40%" x2="75%" y2="47%" class="menParts" />
+            <line x1="90%" y1="40%" x2="75%" y2="47%" class="menParts" />
+            <line x1="75%" y1="60%" x2="90%" y2="70%" class="menParts" />
+            <line x1="75%" y1="60%" x2="60%" y2="70%" class="menParts" />
+         </svg>
+      </div>
+      <div id = "keypadDiv">
+	      <div id = "keypadBtn"></div> 
+      </div>
+    <script src="hangman.js">
+	  </script>
+   </body>
+</html>
